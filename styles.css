@@ -60,10 +60,28 @@ ul {
 .font-semibold { font-weight: 600; }
 
 /* Colors Utility Classes (used in HTML) */
-.text-rose-300 { color: #fda4af; }
-.text-rose-600 { color: #e11d48; }
-.text-rose-800 { color: #9f1239; }
-.bg-rose-50 { background-color: #fff1f2; }
+/* --- NUOVA PALETTE VERDE SALVIA --- */
+
+/* Colore chiaro (icone divisori, linee) - Ex text-rose-300 */
+.text-rose-300 { color: #A3B18A; }
+
+/* Colore medio (icona regali, hover link) - Ex text-rose-600 */
+.text-rose-600 { color: #588157; }
+
+/* Colore scuro (Titoli principali) - Ex text-rose-800 */
+.text-rose-800 { color: #344E41; }
+
+/* Sfondo chiarissimo (Sfondo Foto e IBAN) - Ex bg-rose-50 */
+.bg-rose-50 { background-color: #F3F6F3; }
+
+/* Link colorati nel testo */
+.link-rose {
+    color: #588157; /* Verde medio */
+    font-weight: 600;
+    text-decoration: underline;
+}
+.link-rose:hover { color: #344E41; /* Verde scuro al passaggio mouse */ }
+
 
 /* --- HEADER / NAVBAR --- */
 .navbar {
@@ -74,8 +92,12 @@ ul {
     z-index: 50;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
     height: 5rem; /* h-20 */
+}
+
+.navbar-hidden {
+    transform: translateY(-100%); /* Sposta la barra fuori dallo schermo in alto */
 }
 
 .navbar-container {
@@ -272,7 +294,8 @@ ul {
 .detail-icon {
     width: 1.25rem;
     height: 1.25rem;
-    color: #fda4af; /* rose-300 */
+    /* Cambia questo codice con il colore che preferisci */
+    color: #A3B18A; /* Verde Salvia Chiaro */
 }
 
 .hero-footer-text {
@@ -372,10 +395,10 @@ ul {
 
 .link-dark {
     font-weight: 600;
-    color: white;
+    color: #A3B18A; 
     text-decoration: none;
 }
-.link-dark:hover { color: #be123c; }
+.link-dark:hover { color:#344E41; }
 
 .parking-list-container {
     max-width: 48rem;
@@ -394,12 +417,6 @@ ul {
     gap: 1.25rem;
 }
 
-.link-rose {
-    color: #be123c; /* rose-700 */
-    font-weight: 600;
-    text-decoration: underline;
-}
-.link-rose:hover { color: #881337; }
 
 .map-container {
     margin-top: 3rem;
