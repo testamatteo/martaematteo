@@ -523,3 +523,36 @@ ul {
         object-position: center center;
     }
 }
+/* --- CONTACTS SECTION --- */
+.contacts-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.contact-card{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.contact-title{
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #344E41; /* come text-rose-800 */
+}
+
+.contact-item{
+  margin-top: 0.25rem;
+  color: #4b5563; /* simile intro-text-dark */
+}
+
+@media (min-width: 768px){
+  .contacts-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
