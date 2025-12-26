@@ -556,3 +556,11 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.parking-map {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
